@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
+</head>
+
+
+<body>
+    <div class="container-fluid">
+        <div class="navbar">
+            <div class="navbar2">
+                <h1 class="navbar-brand">Weather Dashboard</h1>
+            </div>
+        </div>
+        <div class="contentrow">
+            <div class="search">
+                <h5>Search for a city:</h5>
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="form" id="search-city" placeholder="Enter">
+                        <div class="input-group-append">
+                            <button class="button-info" type="button" id="search-city-button">
+                                <i class="search2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <button id="clear" class="btn">Clear History</button>
+                </div>
+            </div>
+            <div id="weather-content">
+                <div class="row">
+                    <div class="City">
+                        <div class="city-info">
+                            <h2 id="current-city">City Information <small id="current-date"></small></h2>
+                            
+                            <p class="info">Temperature: <span id="current-temp"></span></p>
+                            <p class="info">Humidity: <span id="current-humidity"></span></p>
+                            <p>UV index: <span id="uv-index"></span></p>
+                            <p class="info">Wind Speed: <span id="wind-speed"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h3>5-Day Forecast</h3>
+                        
+                    </div>
+                </div>
+                <div id="five-day-forecast" class="row">
+                    <div class="card">
+                        <div class="card2">
+                            <div class="card-body">
+                                <h5 class="card-title">Date</h5>
+                                <i class="fa fa-sun"></i>
+                                <p class="card-text">Temp: </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
